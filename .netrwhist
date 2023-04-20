@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jonas/Studium/Prak.Grundlagen_der_Computergraphik/examples/samples/keyboard/src'
+let g:netrw_dirhist_6='/home/jonas/.oh-my-bash/themes/p0were'
+let g:netrw_dirhist_5='/home/jonas'
+let g:netrw_dirhist_4='/home/jonas/.oh-my-bash/themes/p0were'
+let g:netrw_dirhist_3='/home/jonas/Projects/kvm/centos8'
+let g:netrw_dirhist_2='/home/jonas/.local/lib/archives/podman'
+let g:netrw_dirhist_1='/home/jonas/go/src/pkgman/cmd/pkgman'
+let g:netrw_dirhist_0='/home/jonas/go/src/pkgman/cmd'
+let g:netrw_dirhist_9='/home/jonas/go/src/pkgman'
+let g:netrw_dirhist_8='/home/jonas/go/src/pkgman/cmd/pkgman'
