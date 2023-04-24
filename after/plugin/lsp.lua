@@ -30,6 +30,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set('n', "<leader>vrn", function () vim.lsp.buf.rename() end, opts)
     vim.keymap.set('i', "<C-h>", function () vim.lsp.buf.signature_help() end, opts)
 
+    vim.keymap.set('n', "<leader>F", function () vim.lsp.buf.format()   end)
     -- lsp.default_keymaps({buffer = bufnr})
 
 
