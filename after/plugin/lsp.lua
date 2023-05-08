@@ -17,7 +17,7 @@ lsp.setup_nvim_cmp({
 
 lsp.on_attach(function(client, bufnr)
     local opts = {buffer = bufnr, remap = false}
-    lsp.default_keymaps({buffer = bufnr}
+    lsp.default_keymaps({buffer = bufnr})
 
     vim.keymap.set('n', "gd", function () vim.lsp.buf.definition() end, opts)
     vim.keymap.set('n', "K", function () vim.lsp.buf.hover() end, opts)
@@ -31,10 +31,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set('n', "<leader>vrn", function () vim.lsp.buf.rename() end, opts)
     vim.keymap.set('i', "<C-h>", function () vim.lsp.buf.signature_help() end, opts)
 
-    vim.keymap.set('n', "<leader>F", function () vim.lsp.buf.format()   end)
-    -- lsp.default_keymaps({buffer = bufnr})
-
-
+    lsp.buffer_autoformat()
 end)
 
 

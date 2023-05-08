@@ -29,5 +29,5 @@ vim.keymap.set('n', "<leader>Y", "\"+Y")
 vim.keymap.set('n', "Q", "<nop>")
 
 
-
-
+vim.cmd({cmd = "map", args = {'<PageDown>', '<Nop>' }})
+vim.cmd({cmd = "map", args = {'<PageUp>', '<Nop>' }}) 
