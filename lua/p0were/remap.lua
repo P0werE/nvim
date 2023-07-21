@@ -1,5 +1,3 @@
-
-
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -28,6 +26,8 @@ vim.keymap.set('n', "<leader>Y", "\"+Y")
 
 vim.keymap.set('n', "Q", "<nop>")
 
+vim.keymap.set('i', "<PageDown>", "<Nop>")
+vim.keymap.set('i', "<PageUp>", "<Nop>")
 
-vim.cmd({cmd = "map", args = {'<PageDown>', '<Nop>' }})
-vim.cmd({cmd = "map", args = {'<PageUp>', '<Nop>' }}) 
+vim.cmd({ cmd = "map", args = { '<PageDown>', '<Nop>' } })
+vim.cmd({ cmd = "map", args = { '<PageUp>', '<Nop>' } })
