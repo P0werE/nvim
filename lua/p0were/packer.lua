@@ -16,6 +16,9 @@ return require('packer').startup(function(use)
         end
     })
 
+    -- https://github.com/catppuccin/nvim
+    use({ "catppuccin/nvim", as = "catppuccin" })
+
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4',
