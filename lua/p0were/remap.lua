@@ -26,6 +26,9 @@ vim.keymap.set('n', "<leader>Y", "\"+Y")
 
 vim.keymap.set('n', "Q", "<nop>")
 
+-- https://vi.stackexchange.com/questions/19810/how-can-i-focus-on-one-vimsplit-fullscreen
+vim.keymap.set('n', "<leader>z", ":tabe %<CR>")
+
 vim.keymap.set('i', "<PageDown>", "<Nop>")
 vim.keymap.set('i', "<PageUp>", "<Nop>")
 

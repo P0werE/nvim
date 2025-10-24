@@ -35,6 +35,15 @@ return require('packer').startup(function(use)
 
 
     use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+
+
+    use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
@@ -48,6 +57,7 @@ return require('packer').startup(function(use)
                 end,
             },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+
 
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },     -- Required

@@ -25,3 +25,4 @@ require 'nvim-treesitter.configs'.setup {
 
 
 vim.treesitter.language.register('dockerfile', 'containerfile') -- the someft filetype will use the python parser and queries.
+vim.treesitter.language.register('docker', 'containerfile')     -- the someft filetype will use the python parser and queries.
